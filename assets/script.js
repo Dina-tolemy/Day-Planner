@@ -1,6 +1,10 @@
 
 var currentTime = moment();
 chnagingInputColors();
+
+var currentDay=$("<h4>").text(moment());
+$('.dayTitle').append(currentDay);
+
 $("#save1").click(function (event) {
     event.preventDefault();
     gettingFirstEntry();
